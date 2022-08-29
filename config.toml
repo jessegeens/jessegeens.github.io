@@ -135,7 +135,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # whether to show the author
     author = true
     # site creation time
-    since = 2019
+    since = 2022
     # license info (HTML format is supported)
     license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
@@ -202,13 +202,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.home.profile]
       enable = true
       # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
+      #gravatarEmail = "jesse.geens@gmail.com"
       # URL of avatar shown in home page
-      # avatarURL = "images/avatar.png"
+      avatarURL = "assets/images/profile.jpg"
       # title shown in home page (HTML format is supported)
       title = "Jesse Geens"
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "Software engineer // Tech Enthusiast"
+      subtitle = "Software Engineer // Tech Enthusiast"
       # whether to use typeit animation for subtitle
       typeit = false
       # whether to show social links
@@ -217,14 +217,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       disclaimer = ""
     # Home page posts
     [params.home.posts]
-      enable = true
+      enable = false
       # special amount of posts in each home posts page
       paginate = 6
   # Social config in home page
   [params.social]
     Email = "jesse.geens@proton.me"
     Github = "jessegeens"
-    LInkedin = "jessegeens"
+    LInkedin = "jesse-geens"
     Keybase = "jessegeens"
     Goodreads = "jessegeens"
     Angellist = "jesse-geens"
