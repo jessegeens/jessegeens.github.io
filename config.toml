@@ -6,7 +6,7 @@ theme = "LoveIt"
 #themesDir = "../.."
 
 # website title
-title = "LoveIt"
+title = "Jesse Geens"
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
@@ -22,7 +22,7 @@ paginate = 12
 # google analytics code [UA-XXXXXXXX-X]
 googleAnalytics = ""
 # copyright description used only for seo schema
-copyright = ""
+copyright = "(c) 2022 Jesse Geens"
 
 # whether to use robots.txt
 enableRobotsTXT = true
@@ -36,54 +36,70 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
 [author]
-  name = "xxxx"
-  email = ""
+  name = "Jesse Geens"
+  email = "jesse.geens@proton.me"
   link = ""
 
 # Menu config
 [menu]
   [[menu.main]]
     weight = 1
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
+    identifier = "about"
     pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "resume"
+    pre = ""
+    post = ""
+    name = "Resume"
+    url = "/resume/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "publications"
+    pre = ""
+    post = ""
+    name = "Publications"
+    url = "/publications/"
+    title = ""
+  [[menu.main]]
+    weight = 4
+    identifier = "posts"
+    # you can add extra information before/after the name (HTML format is supported), such as icons
+    pre = ""
     post = ""
     name = "Posts"
     url = "/posts/"
     # title will be shown when you hover on this menu link
     title = ""
   [[menu.main]]
-    weight = 2
-    identifier = "tags"
+    weight = 5
+    identifier = "projects"
     pre = ""
     post = ""
-    name = "Tags"
-    url = "/tags/"
+    name = "Projects"
+    url = "/projects/"
     title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
+  
 
 [params]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/dillonzq/LoveIt"
+  gitRepo = "https://github.com/jessegeens/jessegeens.github.io"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
   # date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "LoveIt"
+  title = "Jesse Geens"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Hugo theme - LoveIt"
+  description = "Jesse Geens - Software Engineer"
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
 
@@ -98,9 +114,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # URL of the LOGO
       logo = ""
       # title name
-      name = "LoveIt"
+      name = "Jesse Geens"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      pre = "" 
+      #"<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # whether to use typeit animation for title name
@@ -119,8 +136,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     author = true
     # site creation time
     since = 2019
-    # ICP info only in China (HTML format is supported)
-    icp = ""
     # license info (HTML format is supported)
     license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
@@ -145,7 +160,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "LoveIt"
+    title = "Jesse Geens"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -189,13 +204,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.png"
+      # avatarURL = "images/avatar.png"
       # title shown in home page (HTML format is supported)
-      title = ""
+      title = "Jesse Geens"
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+      subtitle = "Software engineer // Tech Enthusiast"
       # whether to use typeit animation for subtitle
-      typeit = true
+      typeit = false
       # whether to show social links
       social = true
       # disclaimer (HTML format is supported)
@@ -207,80 +222,39 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       paginate = 6
   # Social config in home page
   [params.social]
-    GitHub = ""
-    Linkedin = ""
-    Twitter = ""
-    Instagram = ""
-    Facebook = ""
-    Telegram = ""
-    Medium = ""
-    Gitlab = ""
-    Youtubelegacy = ""
-    Youtubecustom = ""
-    Youtubechannel = ""
-    Tumblr = ""
-    Quora = ""
-    Keybase = ""
-    Pinterest = ""
-    Reddit = ""
-    Codepen = ""
-    FreeCodeCamp = ""
-    Bitbucket = ""
-    Stackoverflow = ""
-    Weibo = ""
-    Odnoklassniki = ""
-    VK = ""
-    Flickr = ""
-    Xing = ""
-    Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
-    Bandcamp = ""
-    Paypal = ""
-    Fivehundredpx = ""
-    Mix = ""
-    Goodreads = ""
-    Lastfm = ""
-    Foursquare = ""
-    Hackernews = ""
-    Kickstarter = ""
-    Patreon = ""
-    Steam = ""
-    Twitch = ""
-    Strava = ""
-    Skype = ""
-    Whatsapp = ""
-    Zhihu = ""
-    Douban = ""
-    Angellist = ""
-    Slidershare = ""
-    Jsfiddle = ""
-    Deviantart = ""
-    Behance = ""
-    Dribbble = ""
-    Wordpress = ""
-    Vine = ""
-    Googlescholar = ""
-    Researchgate = ""
-    Mastodon = ""
-    Thingiverse = ""
-    Devto = ""
-    Gitea = ""
-    XMPP = ""
-    Matrix = ""
-    Bilibili = ""
-    Discord = ""
-    DiscordInvite = ""
-    Lichess = ""
-    ORCID = ""
-    Pleroma = ""
-    Kaggle = ""
-    MediaWiki= ""
-    Plume = ""
-    HackTheBox = ""
-    RootMe= ""
-    Email = ""
-    RSS = ""
+    Email = "jesse.geens@proton.me"
+    Github = "jessegeens"
+    LInkedin = "jessegeens"
+    Keybase = "jessegeens"
+    Goodreads = "jessegeens"
+    Angellist = "jesse-geens"
+    Hackernews = "jessegeens"
+    #GitHub = ""
+    #Twitter = ""
+    #Instagram = ""
+    #Facebook = ""
+    #Telegram = ""
+    #Medium = ""
+    #Gitlab = ""
+    #Twitch = ""
+    #Strava = ""
+    #Skype = ""
+    #Whatsapp = ""
+    #Googlescholar = ""
+    #Researchgate = ""
+    #Mastodon = ""
+    #Thingiverse = ""
+    #Devto = ""
+    #Gitea = ""
+    #XMPP = ""
+    #Matrix = ""
+    #Discord = ""
+    #DiscordInvite = ""
+    #Lichess = ""
+    #ORCID = ""
+    #HackTheBox = ""
+    #RootMe= ""
+
 
   # Page global config
   [params.page]
@@ -320,7 +294,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.page.math]
       enable = false
       # default inline delimiter is $ ... $ and \( ... \)
-      # 默认行内定界符是 $ ... $ 和 \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
       # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
@@ -348,7 +321,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       fullscreen = true
     # Social share links in post page
     [params.page.share]
-      enable = true
+      enable = false
       Twitter = true
       Facebook = true
       Linkedin = false
@@ -476,7 +449,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       typographer = true
     [markup.goldmark.renderer]
       # whether to use HTML tags directly in the document
-      # 是否在文档中直接使用 HTML 标签
       unsafe = true
   # Table Of Contents settings
   [markup.tableOfContents]
@@ -497,7 +469,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
   # privacy of the Google Analytics (replaced by params.analytics.google)
-  # Google Analytics 相关隐私 (被 params.analytics.google 替代)
   [privacy.googleAnalytics]
     # ...
   [privacy.twitter]
@@ -523,101 +494,3 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
-
-# Multilingual
-[languages]
-  [languages.en]
-    weight = 1
-    languageCode = "en"
-    languageName = "English"
-    hasCJKLanguage = false
-    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        weight = 1
-        identifier = "posts"
-        pre = ""
-        post = ""
-        name = "Posts"
-        url = "/posts/"
-        title = ""
-      [[languages.en.menu.main]]
-        weight = 2
-        identifier = "tags"
-        pre = ""
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
-      [[languages.en.menu.main]]
-        weight = 3
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Categories"
-        url = "/categories/"
-        title = ""
-      [[languages.en.menu.main]]
-        weight = 4
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-      [[languages.en.menu.main]]
-        weight = 5
-        identifier = "about"
-        pre = ""
-        post = ""
-        name = "About"
-        url = "/about/"
-        title = ""
-      [[languages.en.menu.main]]
-        weight = 6
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/dillonzq/LoveIt"
-        title = "GitHub"
-    [languages.en.params]
-      [languages.en.params.search]
-        enable = true
-        type = "algolia"
-        contentLength = 4000
-        placeholder = ""
-        maxResultLength = 10
-        snippetLength = 30
-        highlightTag = "em"
-        absoluteURL = false
-        [languages.en.params.search.algolia]
-          index = "index.en"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
-      [languages.en.params.home]
-        rss = 10
-        [languages.en.params.home.profile]
-          enable = true
-          gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
-          title = ""
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
-          typeit = true
-          social = true
-          disclaimer = ""
-      [languages.en.params.social]
-        GitHub = "xxxx"
-        Twitter = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
-        Youtubelegacy = "xxxx"
-        Phone = "555-555-555"
-        Email = "xxxx@xxxx.com"
-        RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
-
- 
