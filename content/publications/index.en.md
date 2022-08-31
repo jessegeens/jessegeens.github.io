@@ -11,4 +11,4 @@ math:
   enable: true
 ---
 
-See my publications here later
+I do not have any publications at the moment
