@@ -1,9 +1,9 @@
 ---
 title: "Resume"
-date: 2019-08-02T11:04:49+08:00
+date: 2022-08-30T11:04:49+08:00
 draft: false
 description: "Jesse's Resume"
-images: ["/Apple-Devices-Preview.png"]
+images: []
 
 lightgallery: true
 
@@ -11,6 +11,11 @@ math:
   enable: true
 ---
 Download a PDF version of my resume [here](resume.pdf)
+
+I am a graduate in Computer Science from the University of Leuven (KU Leuven). I'm passionate about engineering, 
+people and business, with technical interests in distributed computing and 
+privacy-enhancing technologies. I'm very entrepreneurial, ambitious, social and internationally minded.
+
 
 ### :(fa fa-graduation-cap fa-fw): Education
 2020-2022
@@ -80,6 +85,6 @@ nition system for wireless payments using OpenCV.
 - My team and I participated in the finals of the CyberSecurity Challenge Belgium,
 reaching place 23 out of 225 participating teams during the qualifiers. We also
 won this year’s edition of the Ulyssis CTF, with 100 participants
-- For my master’s thesis, I’m working on improving privacy and authentication for
+- For my master’s thesis, I worked on improving privacy and authentication for
 data aggregation in the Solid ecosystem, mainly using TypeScript and Macaroons
 - I am an avid practicer of judo, having obtained the first Kyu grade.
