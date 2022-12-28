@@ -44,6 +44,11 @@ base and Google Cloud Platform
 - Won the SST Pitch Competion, participated in the university’s KICK
 Incubator and presented at our local tech conference: [and&](https://andleuven.com)
 
+10/2022-12/2022
+:   **DevSecOps Engineer (J-1 Intern)** [OMP](https://omp.com)
+--: Atlanta
+- Developed build pipelines that make OMP's software more resilient using Azure DevOps and Powershell
+- Created reliable distributed system deployments using Terraform, Ansible, Kubernetes, and a number of other technologies.
 
 11/2020-04/2021
 :   **Linux Development Intern** [VersaSense](https://versasense.com)
