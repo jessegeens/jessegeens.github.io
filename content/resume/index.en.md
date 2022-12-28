@@ -37,7 +37,7 @@ privacy-enhancing technologies. I'm very entrepreneurial, ambitious, social and 
 
 ### :(fa fa-briefcase fa-fw): Experience
 Current
-:   **Co-Founder & Developer** [TapToChill](https://taptochill.app)
+:   **Co-Founder & Developer** [TapToChill](https://taptochill.app), *Leuven, BE*
 - Building a social platform to easily meet up with friends
 - Developing the entire back-end of the app using Dart/Flutter, Fire-
 base and Google Cloud Platform
@@ -45,19 +45,18 @@ base and Google Cloud Platform
 Incubator and presented at our local tech conference: [and&](https://andleuven.com)
 
 10/2022-12/2022
-:   **DevSecOps Engineer (J-1 Intern)** [OMP](https://omp.com)
---: Atlanta
+:   **DevSecOps Engineer (J-1 Intern)** [OMP](https://omp.com), *Atlanta, USA*
 - Developed build pipelines that make OMP's software more resilient using Azure DevOps and Powershell
-- Created reliable distributed system deployments using Terraform, Ansible, Kubernetes, and a number of other technologies.
+- Created reliable distributed system deployments using Terraform, Ansible, Kubernetes, Helm and a number of other technologies.
 
 11/2020-04/2021
-:   **Linux Development Intern** [VersaSense](https://versasense.com)
+:   **Linux Development Intern** [VersaSense](https://versasense.com), *Leuven, BE*
 - Developed a custom embedded linux distribution for SMIP gateways
 using Yocto and OpenEmbedded
 - Wrote custom bitbake recipes using systemd, docker and bash
 
 06/2020-08/2020
-:   **Software Engineering Intern** [VersaSense](https://versasense.com)
+:   **Software Engineering Intern** [VersaSense](https://versasense.com), *Leuven, BE*
 - Wrote several microservices for VersaSense’s leading Industrial IoT
 Cloud using Golang
 - Used technologies such as Docker, Redis, Prometheus, Protocol
