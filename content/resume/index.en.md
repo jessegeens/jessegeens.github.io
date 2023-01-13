@@ -36,6 +36,10 @@ privacy-enhancing technologies. I'm very entrepreneurial, ambitious, social and 
     *Minor in Business & Innovation*
 
 ### :(fa fa-briefcase fa-fw): Experience
+
+Current
+:   **Software Engineer (Cloud & Security)** [ico**metrix**](https://icometrix.com), *Leuven, BE*
+
 Current
 :   **Co-Founder & Developer** [TapToChill](https://taptochill.app), *Leuven, BE*
 - Building a social platform to easily meet up with friends
