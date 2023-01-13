@@ -27,7 +27,7 @@ Us Belgians take great pride in only very few things. Mostly, these are our beer
 5. Waffles: as a desert! There are two kinds of waffles that are popular in Belgium: the version from Brussels or the Version from Liège. Liègois waffles are a bit heavier and have small clumps of sugar in them. They are usually served either without toppings or with chocolate on them. The Brussels version is much lighter and is often served with powdered sugar, ice cream or 
 
 ### Drinks
-If there is one thing Belgium is *really* famous for, it's beers. And rightly so! A small warning though, are beers are very heavy on the alcohol (think around 8%). Here is a small list of some of my favourite beers:
+If there is one thing Belgium is *really* famous for, it's beers. And rightly so! A small warning though, our beers are very heavy on the alcohol (think around 8%). Here is a small list of some of my favourite beers:
 
 1. Gouden carolus tripel
 2. Cornet
