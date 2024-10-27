@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-date: 2022-08-30T11:04:49+08:00
+date: 2024-08-30T11:04:49+08:00
 draft: false
 description: "Jesse's Resume"
 images: []
@@ -10,11 +10,8 @@ lightgallery: true
 math:
   enable: true
 ---
-Download a PDF version of my resume [here](resume.pdf)
-
 I am a graduate in Computer Science from the University of Leuven (KU Leuven). I'm passionate about engineering, 
-people and business, with technical interests in distributed computing and 
-privacy-enhancing technologies. I'm very entrepreneurial, ambitious, social and internationally minded.
+people and business, with technical interests in distributed computing and privacy-enhancing technologies. 
 
 
 ### :(fa fa-graduation-cap fa-fw): Education
@@ -36,9 +33,17 @@ privacy-enhancing technologies. I'm very entrepreneurial, ambitious, social and 
     *Minor in Business & Innovation*
 
 ### :(fa fa-briefcase fa-fw): Experience
+01/2023-08/2024
+:   **Software Engineer (Data Storage Systems)** [CERN](https://home.cern), *Geneva, CH*
+- Software Engineer in the Storage & Data Management Group of the IT Department
+- Working on CERNBox, which serves ~ 14 PB of data to researchers worldwide.
 
-Current
+
+01/2023-08/2024
 :   **Software Engineer (Cloud & Security)** [ico**metrix**](https://icometrix.com), *Leuven, BE*
+- Software Engineer focused on cloud and security.
+- Building and deploying microservices on AWS to support ML pipelines for automatic quantification of clinically relevant brain structures in MRI and CT scans. 
+- Responsible for our back-end microservices, cloud environment and compliance with standards such as ISO27001.
 
 Current
 :   **Co-Founder & Developer** [TapToChill](https://taptochill.app), *Leuven, BE*
