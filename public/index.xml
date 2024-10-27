@@ -1,0 +1,68 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Jesse Geens</title>
+        <link>https://jessegeens.github.io/</link>
+        <description>Jesse Geens - Software Engineer</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>jesse.geens@proton.me (Jesse Geens)</managingEditor>
+            <webMaster>jesse.geens@proton.me (Jesse Geens)</webMaster><copyright>(c) 2022 Jesse Geens</copyright><lastBuildDate>Fri, 13 Jan 2023 16:25:07 &#43;0200</lastBuildDate>
+            <atom:link href="https://jessegeens.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Theme Documentation - Basics</title>
+    <link>https://jessegeens.github.io/theme-documentation-basics/</link>
+    <pubDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>https://jessegeens.github.io/theme-documentation-basics/</guid>
+    <description><![CDATA[<p>Discover what the Hugo - <strong>LoveIt</strong> theme is all about and the core-concepts behind it.</p>]]></description>
+</item>
+<item>
+    <title>Theme Documentation - Content</title>
+    <link>https://jessegeens.github.io/theme-documentation-content/</link>
+    <pubDate>Thu, 05 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>https://jessegeens.github.io/theme-documentation-content/</guid>
+    <description><![CDATA[<p>Find out how to create and organize your content quickly and intuitively in <strong>LoveIt</strong> theme.</p>]]></description>
+</item>
+<item>
+    <title>My experience as a J-1 Intern in the US</title>
+    <link>https://jessegeens.github.io/j1-experience/</link>
+    <pubDate>Mon, 19 Sep 2022 21:57:40 &#43;0800</pubDate>
+    <author>Jesse</author>
+    <guid>https://jessegeens.github.io/j1-experience/</guid>
+    <description><![CDATA[The J-1 Programme The application process The application process, find a visa sponsor and a host company
+Finding a host company Obtaining a visa In the US ]]></description>
+</item>
+<item>
+    <title>Basic Markdown Syntax</title>
+    <link>https://jessegeens.github.io/basic-markdown-syntax/</link>
+    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>https://jessegeens.github.io/basic-markdown-syntax/</guid>
+    <description><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
+</item>
+<item>
+    <title>Emoji Support</title>
+    <link>https://jessegeens.github.io/emoji-support/</link>
+    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>https://jessegeens.github.io/emoji-support/</guid>
+    <description><![CDATA[<p>Emoji can be enabled in a Hugo project in a number of ways.</p>]]></description>
+</item>
+<item>
+    <title>Jesse&#39;s guide to Belgium 🇧🇪</title>
+    <link>https://jessegeens.github.io/guide-belgium/</link>
+    <pubDate>Fri, 13 Jan 2023 16:25:07 &#43;0200</pubDate>
+    <author>Jesse Geens</author>
+    <guid>https://jessegeens.github.io/guide-belgium/</guid>
+    <description><![CDATA[Jesse&rsquo;s guide to Belgium &#x1f1e7;&#x1f1ea; Many of my friends regularly come to Belgium and ask me what they can see and eat here. Instead of always copy-pasting the same answer, I decided to write a small blogpost about it! I will highlight some famous Belgian dishes that you must try while you&rsquo;re here, as well as highlighting some things you can do in Belgium&rsquo;s largest and pretties cities.
+NOTE: this post is still a work in progress.]]></description>
+</item>
+<item>
+    <title></title>
+    <link>https://jessegeens.github.io/travel-notes-china/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Jesse Geens</author>
+    <guid>https://jessegeens.github.io/travel-notes-china/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>
