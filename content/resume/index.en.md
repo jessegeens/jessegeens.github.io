@@ -10,7 +10,7 @@ lightgallery: true
 math:
   enable: true
 ---
-I am a Software Engineer at [CERN](https://home.cern), wich at Master's in Engineering: Computer Science from the University of Leuven (KU Leuven). 
+I am a Software Engineer at [CERN](https://home.cern), with at Master's in Engineering: Computer Science from KU Leuven. 
 I'm passionate about impacting society through engineering, research and entrepreneurship. On the technical side, I am mostly interested in distributed computing, computer security and privacy-enhancing technologies. 
 
 
