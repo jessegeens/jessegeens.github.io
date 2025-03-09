@@ -36,7 +36,7 @@ I'm passionate about impacting society through engineering, research and entrepr
 09/2024-Present
 :   **Software Engineer (Data Storage Systems)** [CERN](https://home.cern), *Geneva, CH*
 - Software Engineer in the Storage & Data Management Group of the IT Department
-- I mostly work on [reva](github.com/cs3org/reva), which is the back-end component of CERNBox. CERNBox serves ~ 33 PB of data to researchers worldwide.
+- I mostly work on [reva](https://github.com/cs3org/reva), which is the back-end component of CERNBox. CERNBox serves ~ 33 PB of data to researchers worldwide.
 - Technologies used: Go, gRPC and MySQL.
 
 
