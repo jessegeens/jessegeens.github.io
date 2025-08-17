@@ -13,11 +13,11 @@ By some strange twist of fate, I found an abandoned night stand in the basement 
 
 After some research, I decided on using the gridfinity system. Gridfinity is a system consisting of a grid with 42 x 42mm cells, upon which you can place, well, basically anything:
 
-[gridfinity picture]
+![](gridfinity-drawer.jpg)
 
-I measured the inside of the shelves and found they are about 285 x 338mm. Using [https://gridfinitygenerator.com](https://gridfinitygenerator.com/), I generated a baseplate for the shelve, consisting of four parts (because the print surface of my printer is not large enough), and a bunch of coupling pieces. Unfortunately my printer has some bed adhesion issues, but this I managed to solve by including screw holes. The end result looks like this:
+I measured the inside of the shelves and found they are about 285 x 338mm. Using [https://gridfinitygenerator.com](https://gridfinitygenerator.com/), I generated a baseplate for the shelve, consisting of four parts (because the print surface of my printer is not large enough), and a bunch of coupling pieces. Unfortunately my printer has some bed adhesion issues, but this I managed to solve by including screw holes. After drawing some containers for the system, the end result looks like this:
 
-[shelve picture]
+
 
 ## Upgrade 2: Fan upgrade
 
