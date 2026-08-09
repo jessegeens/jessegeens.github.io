@@ -1,0 +1,138 @@
+// ==============================
+// Custom style
+// 自定义样式
+// ==============================
+
+// ------------------------------
+// Photo gallery (/photos/)
+// ------------------------------
+
+// The theme keeps text pages narrow (64% / 1080px, less at small widths),
+// which is right for prose and far too cramped for photographs.
+.page.gallery {
+  width: 90%;
+  max-width: 1600px;
+
+  @media only screen and (max-width: 680px) {
+    width: 100%;
+  }
+}
+
+.gallery {
+  .gallery-intro {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    opacity: 0.75;
+  }
+
+  .gallery-empty {
+    padding: 2rem 0;
+    opacity: 0.7;
+  }
+}
+
+// Masonry via CSS columns: keeps every frame uncropped, which matters more
+// for photographs than a perfectly even grid does.
+.photo-grid {
+  column-count: 3;
+  column-gap: 1rem;
+  margin-top: 1.5rem;
+
+  @media only screen and (max-width: 960px) {
+    column-count: 2;
+  }
+
+  @media only screen and (max-width: 560px) {
+    column-count: 1;
+  }
+}
+
+.photo-item {
+  break-inside: avoid;
+  margin: 0 0 1rem;
+  padding: 0;
+
+  // Safari still needs this to stop items splitting across columns
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+
+  > a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.04);
+    line-height: 0;
+
+    [theme=dark] & {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+
+    // The theme underlines links inside .content; a photo is not a text link
+    &::after {
+      display: none;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.03);
+    filter: brightness(0.85);
+  }
+}
+
+.photo-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2.5rem 0.9rem 0.75rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0));
+  color: #fff;
+  line-height: 1.35;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+
+  .photo-title {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .photo-description {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.8rem;
+    opacity: 0.85;
+  }
+}
+
+.photo-item:hover .photo-caption,
+.photo-item:focus-within .photo-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// Touch devices get no hover, so keep the caption visible there
+@media (hover: none) {
+  .photo-caption {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Camera / film / location line in the lightbox caption
+.lg-sub-html .photo-details {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  opacity: 0.7;
+}

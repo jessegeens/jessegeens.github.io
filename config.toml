@@ -11,7 +11,7 @@ title = "Jesse Geens"
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = "en"
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
+locale = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
@@ -35,7 +35,7 @@ enableEmoji = true
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Author config
-[author]
+[params.author]
   name = "Jesse Geens"
   email = "jesse.geens@proton.me"
   link = ""
@@ -50,40 +50,51 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "About"
     url = "/about/"
     title = ""
-  [[menu.main]]
-    weight = 2
-    identifier = "resume"
-    pre = ""
-    post = ""
-    name = "Resume"
-    url = "/resume/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "publications"
-    pre = ""
-    post = ""
-    name = "Publications"
-    url = "/publications/"
-    title = ""
+  # disabled — page is draft (content/resume/index.en.md)
+  # [[menu.main]]
+  #   weight = 2
+  #   identifier = "resume"
+  #   pre = ""
+  #   post = ""
+  #   name = "Resume"
+  #   url = "/resume/"
+  #   title = ""
+  # disabled — page is draft (content/publications/index.en.md)
+  # [[menu.main]]
+  #   weight = 3
+  #   identifier = "publications"
+  #   pre = ""
+  #   post = ""
+  #   name = "Publications"
+  #   url = "/publications/"
+  #   title = ""
   [[menu.main]]
     weight = 4
-    identifier = "posts"
+    identifier = "blog"
     # you can add extra information before/after the name (HTML format is supported), such as icons
     pre = ""
     post = ""
-    name = "Posts"
-    url = "/posts/"
+    name = "Blog"
+    url = "/blog/"
     # title will be shown when you hover on this menu link
     title = ""
   [[menu.main]]
     weight = 5
-    identifier = "projects"
+    identifier = "photos"
     pre = ""
     post = ""
-    name = "Projects"
-    url = "/projects/"
+    name = "Photos"
+    url = "/photos/"
     title = ""
+  # disabled — page is draft (content/projects/index.en.md)
+  # [[menu.main]]
+  #   weight = 5
+  #   identifier = "projects"
+  #   pre = ""
+  #   post = ""
+  #   name = "Projects"
+  #   url = "/projects/"
+  #   title = ""
   
 
 [params]
@@ -463,15 +474,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 [Permalinks]
-  # posts = ":year/:month/:filename"
-  posts = ":filename"
+  # blog = ":year/:month/:contentbasename"
+  blog = ":contentbasename"
 
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
   # privacy of the Google Analytics (replaced by params.analytics.google)
   [privacy.googleAnalytics]
     # ...
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
@@ -493,4 +504,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+  term = ["HTML", "RSS"]
+
+# Image processing config (used by the photo gallery)
+[imaging]
+  # good quality/size trade-off for the generated JPEG/WebP derivatives
+  quality = 82
+  resampleFilter = "Lanczos"
+  [imaging.exif]
+    # nothing is read from EXIF (film scans carry scanner tags, not camera ones),
+    # but keep coordinates out of anything generated from the originals
+    disableLatLong = true

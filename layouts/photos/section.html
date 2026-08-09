@@ -1,0 +1,83 @@
+{{- define "title" -}}
+    {{ .Title }} - {{ .Site.Title }}
+{{- end -}}
+
+{{- define "content" -}}
+    <div class="page gallery">
+        {{- /* Title */ -}}
+        <h2 class="single-title animate__animated animate__pulse animate__faster">
+            {{- .Title | emojify -}}
+        </h2>
+
+        {{- with .Description -}}
+            <h3 class="single-subtitle">{{ . | emojify }}</h3>
+        {{- end -}}
+
+        {{- /* lightgallery is initialised on #content, so the grid has to live inside it */ -}}
+        <div class="content" id="content">
+            {{- with .Content -}}
+                <div class="gallery-intro">{{ . }}</div>
+            {{- end -}}
+
+            {{- $photos := .Resources.ByType "image" -}}
+            {{- if $photos -}}
+                <div class="photo-grid">
+                    {{- range $photos -}}
+                        {{- /* Title falls back to a readable version of the filename */ -}}
+                        {{- $title := .Title -}}
+                        {{- if or (not $title) (eq $title .Name) -}}
+                            {{- $title = path.BaseName .Name | replaceRE `[-_]+` " " | humanize -}}
+                        {{- end -}}
+                        {{- $description := .Params.description -}}
+
+                        {{- /* Never upscale: small originals are used as-is */ -}}
+                        {{- $small := . -}}
+                        {{- if gt .Width 400 }}{{ $small = .Resize "400x webp q75" }}{{ end -}}
+                        {{- $thumb := . -}}
+                        {{- if gt .Width 800 }}{{ $thumb = .Resize "800x webp q82" }}{{ end -}}
+                        {{- $large := . -}}
+                        {{- if gt .Width 2000 }}{{ $large = .Resize "2000x webp q85" }}{{ end -}}
+
+                        {{- /* Shooting details, all optional and set by hand in _index.md.
+                               EXIF is deliberately not read: these are scans of film, so any
+                               embedded tags belong to the scanner rather than the camera. */ -}}
+                        {{- $details := slice -}}
+                        {{- with .Params.camera }}{{ $details = $details | append . }}{{ end -}}
+                        {{- with .Params.lens }}{{ $details = $details | append . }}{{ end -}}
+                        {{- with .Params.film }}{{ $details = $details | append . }}{{ end -}}
+                        {{- with .Params.location }}{{ $details = $details | append . }}{{ end -}}
+                        {{- with .Params.date }}{{ $details = $details | append . }}{{ end -}}
+
+                        {{- /* Lightbox caption. The entities are decoded by the HTML parser
+                               before lightgallery reads the attribute, so this renders as markup. */ -}}
+                        {{- $caption := printf "<h4>%s</h4>" $title -}}
+                        {{- with $description }}{{ $caption = printf "%s<p>%s</p>" $caption . }}{{ end -}}
+                        {{- with $details }}{{ $caption = printf "%s<p class=\"photo-details\">%s</p>" $caption (delimit . " · ") }}{{ end -}}
+
+                        <figure class="photo-item">
+                            <a class="lightgallery" href="{{ $large.RelPermalink }}"
+                               data-thumbnail="{{ $small.RelPermalink }}"
+                               data-sub-html="{{ $caption }}"
+                               title="{{ $title }}">
+                                <img src="{{ $thumb.RelPermalink }}"
+                                     srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $thumb.RelPermalink }} {{ $thumb.Width }}w, {{ $large.RelPermalink }} {{ $large.Width }}w"
+                                     sizes="(max-width: 560px) 100vw, (max-width: 960px) 50vw, 33vw"
+                                     width="{{ $thumb.Width }}" height="{{ $thumb.Height }}"
+                                     alt="{{ with $description }}{{ . }}{{ else }}{{ $title }}{{ end }}"
+                                     loading="lazy" decoding="async">
+                                <figcaption class="photo-caption">
+                                    <span class="photo-title">{{ $title }}</span>
+                                    {{- with $description }}<span class="photo-description">{{ . }}</span>{{ end -}}
+                                </figcaption>
+                            </a>
+                        </figure>
+                    {{- end -}}
+                </div>
+            {{- else -}}
+                <p class="gallery-empty">
+                    No photos yet — drop image files into <code>content/photos/</code> and they will show up here.
+                </p>
+            {{- end -}}
+        </div>
+    </div>
+{{- end -}}
