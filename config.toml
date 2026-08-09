@@ -59,14 +59,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #   name = "Resume"
   #   url = "/resume/"
   #   title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "publications"
-    pre = ""
-    post = ""
-    name = "Publications"
-    url = "/publications/"
-    title = ""
+  # disabled — page is draft (content/publications/index.en.md)
+  # [[menu.main]]
+  #   weight = 3
+  #   identifier = "publications"
+  #   pre = ""
+  #   post = ""
+  #   name = "Publications"
+  #   url = "/publications/"
+  #   title = ""
   [[menu.main]]
     weight = 4
     identifier = "blog"
@@ -76,6 +77,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "Blog"
     url = "/blog/"
     # title will be shown when you hover on this menu link
+    title = ""
+  [[menu.main]]
+    weight = 5
+    identifier = "photos"
+    pre = ""
+    post = ""
+    name = "Photos"
+    url = "/photos/"
     title = ""
   # disabled — page is draft (content/projects/index.en.md)
   # [[menu.main]]
@@ -496,3 +505,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
+
+# Image processing config (used by the photo gallery)
+[imaging]
+  # good quality/size trade-off for the generated JPEG/WebP derivatives
+  quality = 82
+  resampleFilter = "Lanczos"
+  [imaging.exif]
+    # nothing is read from EXIF (film scans carry scanner tags, not camera ones),
+    # but keep coordinates out of anything generated from the originals
+    disableLatLong = true
